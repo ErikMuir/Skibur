@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skibur.PuzzleLogic", "Skibur.PuzzleLogic\Skibur.PuzzleLogic.csproj", "{9141F55E-AF65-4B32-8976-4CFF7E13C1EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skibur.App", "Skibur.App\Skibur.App.csproj", "{648B2104-9627-41E4-86E5-583F1C004168}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skibur.Web", "Skibur.Web\Skibur.Web.csproj", "{F467F182-6278-4228-A121-62B8DA2079CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9141F55E-AF65-4B32-8976-4CFF7E13C1EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9141F55E-AF65-4B32-8976-4CFF7E13C1EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9141F55E-AF65-4B32-8976-4CFF7E13C1EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9141F55E-AF65-4B32-8976-4CFF7E13C1EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{648B2104-9627-41E4-86E5-583F1C004168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{648B2104-9627-41E4-86E5-583F1C004168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{648B2104-9627-41E4-86E5-583F1C004168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{648B2104-9627-41E4-86E5-583F1C004168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F467F182-6278-4228-A121-62B8DA2079CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F467F182-6278-4228-A121-62B8DA2079CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F467F182-6278-4228-A121-62B8DA2079CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F467F182-6278-4228-A121-62B8DA2079CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
