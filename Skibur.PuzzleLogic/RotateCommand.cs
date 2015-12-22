@@ -1,4 +1,5 @@
 ﻿using System;
+using static Skibur.PuzzleLogic.Enums;
 
 namespace Skibur.PuzzleLogic
 {
