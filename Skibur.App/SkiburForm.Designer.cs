@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SkiburForm));
             this.tblBack = new System.Windows.Forms.TableLayoutPanel();
-            this.lblBack = new System.Windows.Forms.Label();
+            this.lblB = new System.Windows.Forms.Label();
             this.tblRight = new System.Windows.Forms.TableLayoutPanel();
-            this.lblRight = new System.Windows.Forms.Label();
+            this.lblR = new System.Windows.Forms.Label();
             this.tblDown = new System.Windows.Forms.TableLayoutPanel();
-            this.lblDown = new System.Windows.Forms.Label();
+            this.lblD = new System.Windows.Forms.Label();
             this.tblUp = new System.Windows.Forms.TableLayoutPanel();
-            this.lblUp = new System.Windows.Forms.Label();
+            this.lblU = new System.Windows.Forms.Label();
             this.tblFront = new System.Windows.Forms.TableLayoutPanel();
-            this.lblFront = new System.Windows.Forms.Label();
+            this.lblF = new System.Windows.Forms.Label();
             this.tblLeft = new System.Windows.Forms.TableLayoutPanel();
-            this.lblLeft = new System.Windows.Forms.Label();
+            this.lblL = new System.Windows.Forms.Label();
             this.btnR1Turn = new System.Windows.Forms.Button();
             this.btnR2Turn = new System.Windows.Forms.Button();
             this.btnR3Turn = new System.Windows.Forms.Button();
@@ -78,18 +78,27 @@
             this.lblElapsedTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblTurnCount = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.btnNew = new System.Windows.Forms.ToolStripButton();
             this.btnOpen = new System.Windows.Forms.ToolStripButton();
             this.btnSave = new System.Windows.Forms.ToolStripButton();
             this.btnSaveAs = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnUndo = new System.Windows.Forms.ToolStripButton();
             this.btnRedo = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnScramble = new System.Windows.Forms.ToolStripButton();
             this.btnReset = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.btnHelp = new System.Windows.Forms.ToolStripButton();
+            this.lblLeft = new System.Windows.Forms.Label();
+            this.lblRight = new System.Windows.Forms.Label();
+            this.lblUp = new System.Windows.Forms.Label();
+            this.lblDown = new System.Windows.Forms.Label();
+            this.lblFront = new System.Windows.Forms.Label();
+            this.lblBack = new System.Windows.Forms.Label();
+            this.lblXAxis = new System.Windows.Forms.Label();
+            this.lblYAxis = new System.Windows.Forms.Label();
+            this.lblZAxis = new System.Windows.Forms.Label();
             this.tblBack.SuspendLayout();
             this.tblRight.SuspendLayout();
             this.tblDown.SuspendLayout();
@@ -107,7 +116,7 @@
             this.tblBack.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblBack.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblBack.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tblBack.Controls.Add(this.lblBack, 1, 1);
+            this.tblBack.Controls.Add(this.lblB, 1, 1);
             this.tblBack.Location = new System.Drawing.Point(506, 247);
             this.tblBack.Margin = new System.Windows.Forms.Padding(2);
             this.tblBack.Name = "tblBack";
@@ -119,21 +128,21 @@
             this.tblBack.TabIndex = 11;
             this.tblBack.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tblBack_CellPaint);
             // 
-            // lblBack
+            // lblB
             // 
-            this.lblBack.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblBack.AutoSize = true;
-            this.lblBack.BackColor = System.Drawing.Color.Transparent;
-            this.lblBack.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBack.Location = new System.Drawing.Point(54, 58);
-            this.lblBack.Margin = new System.Windows.Forms.Padding(2);
-            this.lblBack.Name = "lblBack";
-            this.lblBack.Size = new System.Drawing.Size(42, 46);
-            this.lblBack.TabIndex = 1;
-            this.lblBack.Text = "B";
-            this.lblBack.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblB.AutoSize = true;
+            this.lblB.BackColor = System.Drawing.Color.Transparent;
+            this.lblB.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblB.Location = new System.Drawing.Point(54, 58);
+            this.lblB.Margin = new System.Windows.Forms.Padding(2);
+            this.lblB.Name = "lblB";
+            this.lblB.Size = new System.Drawing.Size(42, 46);
+            this.lblB.TabIndex = 1;
+            this.lblB.Text = "B";
+            this.lblB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tblRight
             // 
@@ -142,7 +151,7 @@
             this.tblRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tblRight.Controls.Add(this.lblRight, 1, 1);
+            this.tblRight.Controls.Add(this.lblR, 1, 1);
             this.tblRight.Location = new System.Drawing.Point(352, 247);
             this.tblRight.Margin = new System.Windows.Forms.Padding(2);
             this.tblRight.Name = "tblRight";
@@ -154,21 +163,21 @@
             this.tblRight.TabIndex = 10;
             this.tblRight.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tblRight_CellPaint);
             // 
-            // lblRight
+            // lblR
             // 
-            this.lblRight.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblR.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblRight.AutoSize = true;
-            this.lblRight.BackColor = System.Drawing.Color.Transparent;
-            this.lblRight.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRight.Location = new System.Drawing.Point(54, 58);
-            this.lblRight.Margin = new System.Windows.Forms.Padding(2);
-            this.lblRight.Name = "lblRight";
-            this.lblRight.Size = new System.Drawing.Size(42, 46);
-            this.lblRight.TabIndex = 1;
-            this.lblRight.Text = "R";
-            this.lblRight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblR.AutoSize = true;
+            this.lblR.BackColor = System.Drawing.Color.Transparent;
+            this.lblR.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblR.Location = new System.Drawing.Point(54, 58);
+            this.lblR.Margin = new System.Windows.Forms.Padding(2);
+            this.lblR.Name = "lblR";
+            this.lblR.Size = new System.Drawing.Size(42, 46);
+            this.lblR.TabIndex = 1;
+            this.lblR.Text = "R";
+            this.lblR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tblDown
             // 
@@ -177,7 +186,7 @@
             this.tblDown.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblDown.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblDown.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tblDown.Controls.Add(this.lblDown, 1, 1);
+            this.tblDown.Controls.Add(this.lblD, 1, 1);
             this.tblDown.Location = new System.Drawing.Point(198, 415);
             this.tblDown.Margin = new System.Windows.Forms.Padding(2);
             this.tblDown.Name = "tblDown";
@@ -189,21 +198,21 @@
             this.tblDown.TabIndex = 9;
             this.tblDown.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tblDown_CellPaint);
             // 
-            // lblDown
+            // lblD
             // 
-            this.lblDown.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblD.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDown.AutoSize = true;
-            this.lblDown.BackColor = System.Drawing.Color.Transparent;
-            this.lblDown.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDown.Location = new System.Drawing.Point(54, 58);
-            this.lblDown.Margin = new System.Windows.Forms.Padding(2);
-            this.lblDown.Name = "lblDown";
-            this.lblDown.Size = new System.Drawing.Size(42, 46);
-            this.lblDown.TabIndex = 1;
-            this.lblDown.Text = "D";
-            this.lblDown.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblD.AutoSize = true;
+            this.lblD.BackColor = System.Drawing.Color.Transparent;
+            this.lblD.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblD.Location = new System.Drawing.Point(54, 58);
+            this.lblD.Margin = new System.Windows.Forms.Padding(2);
+            this.lblD.Name = "lblD";
+            this.lblD.Size = new System.Drawing.Size(42, 46);
+            this.lblD.TabIndex = 1;
+            this.lblD.Text = "D";
+            this.lblD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tblUp
             // 
@@ -212,7 +221,7 @@
             this.tblUp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblUp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblUp.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tblUp.Controls.Add(this.lblUp, 1, 1);
+            this.tblUp.Controls.Add(this.lblU, 1, 1);
             this.tblUp.Location = new System.Drawing.Point(198, 80);
             this.tblUp.Margin = new System.Windows.Forms.Padding(2);
             this.tblUp.Name = "tblUp";
@@ -224,21 +233,21 @@
             this.tblUp.TabIndex = 8;
             this.tblUp.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tblUp_CellPaint);
             // 
-            // lblUp
+            // lblU
             // 
-            this.lblUp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblU.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblUp.AutoSize = true;
-            this.lblUp.BackColor = System.Drawing.Color.Transparent;
-            this.lblUp.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUp.Location = new System.Drawing.Point(54, 58);
-            this.lblUp.Margin = new System.Windows.Forms.Padding(2);
-            this.lblUp.Name = "lblUp";
-            this.lblUp.Size = new System.Drawing.Size(42, 46);
-            this.lblUp.TabIndex = 0;
-            this.lblUp.Text = "U";
-            this.lblUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblU.AutoSize = true;
+            this.lblU.BackColor = System.Drawing.Color.Transparent;
+            this.lblU.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblU.Location = new System.Drawing.Point(54, 58);
+            this.lblU.Margin = new System.Windows.Forms.Padding(2);
+            this.lblU.Name = "lblU";
+            this.lblU.Size = new System.Drawing.Size(42, 46);
+            this.lblU.TabIndex = 0;
+            this.lblU.Text = "U";
+            this.lblU.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tblFront
             // 
@@ -247,7 +256,7 @@
             this.tblFront.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblFront.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblFront.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tblFront.Controls.Add(this.lblFront, 1, 1);
+            this.tblFront.Controls.Add(this.lblF, 1, 1);
             this.tblFront.Location = new System.Drawing.Point(198, 247);
             this.tblFront.Margin = new System.Windows.Forms.Padding(2);
             this.tblFront.Name = "tblFront";
@@ -259,21 +268,21 @@
             this.tblFront.TabIndex = 7;
             this.tblFront.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tblFront_CellPaint);
             // 
-            // lblFront
+            // lblF
             // 
-            this.lblFront.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblF.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblFront.AutoSize = true;
-            this.lblFront.BackColor = System.Drawing.Color.Transparent;
-            this.lblFront.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFront.Location = new System.Drawing.Point(54, 58);
-            this.lblFront.Margin = new System.Windows.Forms.Padding(2);
-            this.lblFront.Name = "lblFront";
-            this.lblFront.Size = new System.Drawing.Size(42, 46);
-            this.lblFront.TabIndex = 1;
-            this.lblFront.Text = "F";
-            this.lblFront.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblF.AutoSize = true;
+            this.lblF.BackColor = System.Drawing.Color.Transparent;
+            this.lblF.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblF.Location = new System.Drawing.Point(54, 58);
+            this.lblF.Margin = new System.Windows.Forms.Padding(2);
+            this.lblF.Name = "lblF";
+            this.lblF.Size = new System.Drawing.Size(42, 46);
+            this.lblF.TabIndex = 1;
+            this.lblF.Text = "F";
+            this.lblF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tblLeft
             // 
@@ -282,7 +291,7 @@
             this.tblLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tblLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tblLeft.Controls.Add(this.lblLeft, 1, 1);
+            this.tblLeft.Controls.Add(this.lblL, 1, 1);
             this.tblLeft.Location = new System.Drawing.Point(43, 247);
             this.tblLeft.Margin = new System.Windows.Forms.Padding(2);
             this.tblLeft.Name = "tblLeft";
@@ -294,26 +303,26 @@
             this.tblLeft.TabIndex = 6;
             this.tblLeft.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tblLeft_CellPaint);
             // 
-            // lblLeft
+            // lblL
             // 
-            this.lblLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblL.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblLeft.AutoSize = true;
-            this.lblLeft.BackColor = System.Drawing.Color.Transparent;
-            this.lblLeft.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLeft.Location = new System.Drawing.Point(54, 58);
-            this.lblLeft.Margin = new System.Windows.Forms.Padding(2);
-            this.lblLeft.Name = "lblLeft";
-            this.lblLeft.Size = new System.Drawing.Size(42, 46);
-            this.lblLeft.TabIndex = 1;
-            this.lblLeft.Text = "L";
-            this.lblLeft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblL.AutoSize = true;
+            this.lblL.BackColor = System.Drawing.Color.Transparent;
+            this.lblL.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblL.Location = new System.Drawing.Point(54, 58);
+            this.lblL.Margin = new System.Windows.Forms.Padding(2);
+            this.lblL.Name = "lblL";
+            this.lblL.Size = new System.Drawing.Size(42, 46);
+            this.lblL.TabIndex = 1;
+            this.lblL.Text = "L";
+            this.lblL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnR1Turn
             // 
             this.btnR1Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnR1Turn.Location = new System.Drawing.Point(739, 151);
+            this.btnR1Turn.Location = new System.Drawing.Point(785, 151);
             this.btnR1Turn.Name = "btnR1Turn";
             this.btnR1Turn.Size = new System.Drawing.Size(34, 37);
             this.btnR1Turn.TabIndex = 3;
@@ -324,7 +333,7 @@
             // btnR2Turn
             // 
             this.btnR2Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnR2Turn.Location = new System.Drawing.Point(818, 151);
+            this.btnR2Turn.Location = new System.Drawing.Point(863, 151);
             this.btnR2Turn.Name = "btnR2Turn";
             this.btnR2Turn.Size = new System.Drawing.Size(34, 37);
             this.btnR2Turn.TabIndex = 5;
@@ -335,7 +344,7 @@
             // btnR3Turn
             // 
             this.btnR3Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnR3Turn.Location = new System.Drawing.Point(778, 151);
+            this.btnR3Turn.Location = new System.Drawing.Point(824, 151);
             this.btnR3Turn.Name = "btnR3Turn";
             this.btnR3Turn.Size = new System.Drawing.Size(34, 37);
             this.btnR3Turn.TabIndex = 4;
@@ -346,7 +355,7 @@
             // btnU3Turn
             // 
             this.btnU3Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnU3Turn.Location = new System.Drawing.Point(778, 194);
+            this.btnU3Turn.Location = new System.Drawing.Point(824, 194);
             this.btnU3Turn.Name = "btnU3Turn";
             this.btnU3Turn.Size = new System.Drawing.Size(34, 37);
             this.btnU3Turn.TabIndex = 7;
@@ -357,7 +366,7 @@
             // btnU2Turn
             // 
             this.btnU2Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnU2Turn.Location = new System.Drawing.Point(818, 194);
+            this.btnU2Turn.Location = new System.Drawing.Point(863, 194);
             this.btnU2Turn.Name = "btnU2Turn";
             this.btnU2Turn.Size = new System.Drawing.Size(34, 37);
             this.btnU2Turn.TabIndex = 8;
@@ -368,7 +377,7 @@
             // btnU1Turn
             // 
             this.btnU1Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnU1Turn.Location = new System.Drawing.Point(739, 194);
+            this.btnU1Turn.Location = new System.Drawing.Point(785, 194);
             this.btnU1Turn.Name = "btnU1Turn";
             this.btnU1Turn.Size = new System.Drawing.Size(34, 37);
             this.btnU1Turn.TabIndex = 6;
@@ -379,7 +388,7 @@
             // btnL3Turn
             // 
             this.btnL3Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnL3Turn.Location = new System.Drawing.Point(778, 107);
+            this.btnL3Turn.Location = new System.Drawing.Point(824, 107);
             this.btnL3Turn.Name = "btnL3Turn";
             this.btnL3Turn.Size = new System.Drawing.Size(34, 37);
             this.btnL3Turn.TabIndex = 1;
@@ -390,7 +399,7 @@
             // btnL2Turn
             // 
             this.btnL2Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnL2Turn.Location = new System.Drawing.Point(818, 107);
+            this.btnL2Turn.Location = new System.Drawing.Point(863, 107);
             this.btnL2Turn.Name = "btnL2Turn";
             this.btnL2Turn.Size = new System.Drawing.Size(34, 37);
             this.btnL2Turn.TabIndex = 2;
@@ -401,7 +410,7 @@
             // btnL1Turn
             // 
             this.btnL1Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnL1Turn.Location = new System.Drawing.Point(739, 107);
+            this.btnL1Turn.Location = new System.Drawing.Point(785, 107);
             this.btnL1Turn.Name = "btnL1Turn";
             this.btnL1Turn.Size = new System.Drawing.Size(34, 37);
             this.btnL1Turn.TabIndex = 0;
@@ -412,7 +421,7 @@
             // btnD3Turn
             // 
             this.btnD3Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD3Turn.Location = new System.Drawing.Point(778, 238);
+            this.btnD3Turn.Location = new System.Drawing.Point(824, 238);
             this.btnD3Turn.Name = "btnD3Turn";
             this.btnD3Turn.Size = new System.Drawing.Size(34, 37);
             this.btnD3Turn.TabIndex = 10;
@@ -423,7 +432,7 @@
             // btnD2Turn
             // 
             this.btnD2Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD2Turn.Location = new System.Drawing.Point(818, 238);
+            this.btnD2Turn.Location = new System.Drawing.Point(863, 238);
             this.btnD2Turn.Name = "btnD2Turn";
             this.btnD2Turn.Size = new System.Drawing.Size(34, 37);
             this.btnD2Turn.TabIndex = 11;
@@ -434,7 +443,7 @@
             // btnD1Turn
             // 
             this.btnD1Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD1Turn.Location = new System.Drawing.Point(739, 238);
+            this.btnD1Turn.Location = new System.Drawing.Point(785, 238);
             this.btnD1Turn.Name = "btnD1Turn";
             this.btnD1Turn.Size = new System.Drawing.Size(34, 37);
             this.btnD1Turn.TabIndex = 9;
@@ -445,7 +454,7 @@
             // btnB3Turn
             // 
             this.btnB3Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB3Turn.Location = new System.Drawing.Point(778, 327);
+            this.btnB3Turn.Location = new System.Drawing.Point(824, 327);
             this.btnB3Turn.Name = "btnB3Turn";
             this.btnB3Turn.Size = new System.Drawing.Size(34, 37);
             this.btnB3Turn.TabIndex = 16;
@@ -456,7 +465,7 @@
             // btnB2Turn
             // 
             this.btnB2Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB2Turn.Location = new System.Drawing.Point(818, 327);
+            this.btnB2Turn.Location = new System.Drawing.Point(863, 327);
             this.btnB2Turn.Name = "btnB2Turn";
             this.btnB2Turn.Size = new System.Drawing.Size(34, 37);
             this.btnB2Turn.TabIndex = 17;
@@ -467,7 +476,7 @@
             // btnB1Turn
             // 
             this.btnB1Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB1Turn.Location = new System.Drawing.Point(739, 327);
+            this.btnB1Turn.Location = new System.Drawing.Point(785, 327);
             this.btnB1Turn.Name = "btnB1Turn";
             this.btnB1Turn.Size = new System.Drawing.Size(34, 37);
             this.btnB1Turn.TabIndex = 15;
@@ -478,7 +487,7 @@
             // btnF3Turn
             // 
             this.btnF3Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnF3Turn.Location = new System.Drawing.Point(778, 283);
+            this.btnF3Turn.Location = new System.Drawing.Point(824, 283);
             this.btnF3Turn.Name = "btnF3Turn";
             this.btnF3Turn.Size = new System.Drawing.Size(34, 37);
             this.btnF3Turn.TabIndex = 13;
@@ -489,7 +498,7 @@
             // btnF2Turn
             // 
             this.btnF2Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnF2Turn.Location = new System.Drawing.Point(818, 283);
+            this.btnF2Turn.Location = new System.Drawing.Point(863, 283);
             this.btnF2Turn.Name = "btnF2Turn";
             this.btnF2Turn.Size = new System.Drawing.Size(34, 37);
             this.btnF2Turn.TabIndex = 14;
@@ -500,7 +509,7 @@
             // btnF1Turn
             // 
             this.btnF1Turn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnF1Turn.Location = new System.Drawing.Point(739, 283);
+            this.btnF1Turn.Location = new System.Drawing.Point(785, 283);
             this.btnF1Turn.Name = "btnF1Turn";
             this.btnF1Turn.Size = new System.Drawing.Size(34, 37);
             this.btnF1Turn.TabIndex = 12;
@@ -511,7 +520,7 @@
             // btnX1Rotate
             // 
             this.btnX1Rotate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnX1Rotate.Location = new System.Drawing.Point(739, 442);
+            this.btnX1Rotate.Location = new System.Drawing.Point(785, 442);
             this.btnX1Rotate.Name = "btnX1Rotate";
             this.btnX1Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnX1Rotate.TabIndex = 18;
@@ -522,7 +531,7 @@
             // btnY1Rotate
             // 
             this.btnY1Rotate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnY1Rotate.Location = new System.Drawing.Point(739, 486);
+            this.btnY1Rotate.Location = new System.Drawing.Point(785, 486);
             this.btnY1Rotate.Name = "btnY1Rotate";
             this.btnY1Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnY1Rotate.TabIndex = 21;
@@ -533,7 +542,7 @@
             // btnZ1Rotate
             // 
             this.btnZ1Rotate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZ1Rotate.Location = new System.Drawing.Point(739, 529);
+            this.btnZ1Rotate.Location = new System.Drawing.Point(785, 529);
             this.btnZ1Rotate.Name = "btnZ1Rotate";
             this.btnZ1Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnZ1Rotate.TabIndex = 24;
@@ -544,7 +553,7 @@
             // btnZ3Rotate
             // 
             this.btnZ3Rotate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZ3Rotate.Location = new System.Drawing.Point(778, 529);
+            this.btnZ3Rotate.Location = new System.Drawing.Point(824, 529);
             this.btnZ3Rotate.Name = "btnZ3Rotate";
             this.btnZ3Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnZ3Rotate.TabIndex = 25;
@@ -555,7 +564,7 @@
             // btnY3Rotate
             // 
             this.btnY3Rotate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnY3Rotate.Location = new System.Drawing.Point(778, 486);
+            this.btnY3Rotate.Location = new System.Drawing.Point(824, 486);
             this.btnY3Rotate.Name = "btnY3Rotate";
             this.btnY3Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnY3Rotate.TabIndex = 22;
@@ -566,7 +575,7 @@
             // btnX3Rotate
             // 
             this.btnX3Rotate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnX3Rotate.Location = new System.Drawing.Point(778, 442);
+            this.btnX3Rotate.Location = new System.Drawing.Point(824, 442);
             this.btnX3Rotate.Name = "btnX3Rotate";
             this.btnX3Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnX3Rotate.TabIndex = 19;
@@ -577,7 +586,7 @@
             // btnZ2Rotate
             // 
             this.btnZ2Rotate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZ2Rotate.Location = new System.Drawing.Point(818, 529);
+            this.btnZ2Rotate.Location = new System.Drawing.Point(863, 529);
             this.btnZ2Rotate.Name = "btnZ2Rotate";
             this.btnZ2Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnZ2Rotate.TabIndex = 26;
@@ -588,7 +597,7 @@
             // btnY2Rotate
             // 
             this.btnY2Rotate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnY2Rotate.Location = new System.Drawing.Point(818, 486);
+            this.btnY2Rotate.Location = new System.Drawing.Point(863, 486);
             this.btnY2Rotate.Name = "btnY2Rotate";
             this.btnY2Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnY2Rotate.TabIndex = 23;
@@ -599,7 +608,7 @@
             // btnX2Rotate
             // 
             this.btnX2Rotate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnX2Rotate.Location = new System.Drawing.Point(818, 442);
+            this.btnX2Rotate.Location = new System.Drawing.Point(863, 442);
             this.btnX2Rotate.Name = "btnX2Rotate";
             this.btnX2Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnX2Rotate.TabIndex = 20;
@@ -611,10 +620,10 @@
             // 
             this.lblTurns.AutoSize = true;
             this.lblTurns.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTurns.Location = new System.Drawing.Point(734, 80);
+            this.lblTurns.Location = new System.Drawing.Point(780, 80);
             this.lblTurns.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTurns.Name = "lblTurns";
-            this.lblTurns.Size = new System.Drawing.Size(56, 22);
+            this.lblTurns.Size = new System.Drawing.Size(72, 26);
             this.lblTurns.TabIndex = 46;
             this.lblTurns.Text = "TURNS";
             // 
@@ -622,10 +631,10 @@
             // 
             this.lblRotations.AutoSize = true;
             this.lblRotations.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRotations.Location = new System.Drawing.Point(734, 415);
+            this.lblRotations.Location = new System.Drawing.Point(780, 415);
             this.lblRotations.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRotations.Name = "lblRotations";
-            this.lblRotations.Size = new System.Drawing.Size(86, 22);
+            this.lblRotations.Size = new System.Drawing.Size(111, 26);
             this.lblRotations.TabIndex = 47;
             this.lblRotations.Text = "ROTATIONS";
             // 
@@ -655,7 +664,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 606);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.statusStrip1.Size = new System.Drawing.Size(895, 50);
+            this.statusStrip1.Size = new System.Drawing.Size(938, 50);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 49;
             this.statusStrip1.Text = "statusStrip1";
@@ -665,7 +674,7 @@
             this.lblElapsedTime.ForeColor = System.Drawing.Color.White;
             this.lblElapsedTime.Margin = new System.Windows.Forms.Padding(10, 3, 25, 2);
             this.lblElapsedTime.Name = "lblElapsedTime";
-            this.lblElapsedTime.Size = new System.Drawing.Size(110, 45);
+            this.lblElapsedTime.Size = new System.Drawing.Size(139, 45);
             this.lblElapsedTime.Text = "Elapsed Time:";
             this.lblElapsedTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -673,7 +682,7 @@
             // 
             this.lblTurnCount.ForeColor = System.Drawing.Color.White;
             this.lblTurnCount.Name = "lblTurnCount";
-            this.lblTurnCount.Size = new System.Drawing.Size(91, 45);
+            this.lblTurnCount.Size = new System.Drawing.Size(117, 45);
             this.lblTurnCount.Text = "Turn Count:";
             // 
             // toolStrip1
@@ -683,6 +692,7 @@
             this.toolStrip1.AutoSize = false;
             this.toolStrip1.BackColor = System.Drawing.Color.DimGray;
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNew,
             this.btnOpen,
@@ -700,27 +710,9 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(895, 50);
+            this.toolStrip1.Size = new System.Drawing.Size(938, 50);
             this.toolStrip1.TabIndex = 50;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.AutoSize = false;
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 45);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.AutoSize = false;
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 45);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.AutoSize = false;
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 45);
             // 
             // btnNew
             // 
@@ -768,6 +760,12 @@
             this.btnSaveAs.Text = "Save As";
             this.btnSaveAs.Click += new System.EventHandler(this.btnSaveAs_Click);
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.AutoSize = false;
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 45);
+            // 
             // btnUndo
             // 
             this.btnUndo.AutoSize = false;
@@ -789,6 +787,12 @@
             this.btnRedo.Size = new System.Drawing.Size(45, 45);
             this.btnRedo.Text = "Redo";
             this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.AutoSize = false;
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 45);
             // 
             // btnScramble
             // 
@@ -812,6 +816,12 @@
             this.btnReset.Text = "Reset";
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.AutoSize = false;
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 45);
+            // 
             // btnHelp
             // 
             this.btnHelp.AutoSize = false;
@@ -823,12 +833,120 @@
             this.btnHelp.Text = "Help";
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
+            // lblLeft
+            // 
+            this.lblLeft.AutoSize = true;
+            this.lblLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLeft.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblLeft.Location = new System.Drawing.Point(737, 115);
+            this.lblLeft.Name = "lblLeft";
+            this.lblLeft.Size = new System.Drawing.Size(32, 18);
+            this.lblLeft.TabIndex = 51;
+            this.lblLeft.Text = "Left";
+            // 
+            // lblRight
+            // 
+            this.lblRight.AutoSize = true;
+            this.lblRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRight.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblRight.Location = new System.Drawing.Point(727, 159);
+            this.lblRight.Name = "lblRight";
+            this.lblRight.Size = new System.Drawing.Size(42, 18);
+            this.lblRight.TabIndex = 52;
+            this.lblRight.Text = "Right";
+            // 
+            // lblUp
+            // 
+            this.lblUp.AutoSize = true;
+            this.lblUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUp.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblUp.Location = new System.Drawing.Point(742, 202);
+            this.lblUp.Name = "lblUp";
+            this.lblUp.Size = new System.Drawing.Size(27, 18);
+            this.lblUp.TabIndex = 53;
+            this.lblUp.Text = "Up";
+            // 
+            // lblDown
+            // 
+            this.lblDown.AutoSize = true;
+            this.lblDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDown.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblDown.Location = new System.Drawing.Point(722, 246);
+            this.lblDown.Name = "lblDown";
+            this.lblDown.Size = new System.Drawing.Size(47, 18);
+            this.lblDown.TabIndex = 54;
+            this.lblDown.Text = "Down";
+            // 
+            // lblFront
+            // 
+            this.lblFront.AutoSize = true;
+            this.lblFront.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFront.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblFront.Location = new System.Drawing.Point(726, 291);
+            this.lblFront.Name = "lblFront";
+            this.lblFront.Size = new System.Drawing.Size(43, 18);
+            this.lblFront.TabIndex = 55;
+            this.lblFront.Text = "Front";
+            // 
+            // lblBack
+            // 
+            this.lblBack.AutoSize = true;
+            this.lblBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBack.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblBack.Location = new System.Drawing.Point(727, 335);
+            this.lblBack.Name = "lblBack";
+            this.lblBack.Size = new System.Drawing.Size(42, 18);
+            this.lblBack.TabIndex = 56;
+            this.lblBack.Text = "Back";
+            // 
+            // lblXAxis
+            // 
+            this.lblXAxis.AutoSize = true;
+            this.lblXAxis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblXAxis.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblXAxis.Location = new System.Drawing.Point(719, 450);
+            this.lblXAxis.Name = "lblXAxis";
+            this.lblXAxis.Size = new System.Drawing.Size(50, 18);
+            this.lblXAxis.TabIndex = 57;
+            this.lblXAxis.Text = "X-Axis";
+            // 
+            // lblYAxis
+            // 
+            this.lblYAxis.AutoSize = true;
+            this.lblYAxis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYAxis.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblYAxis.Location = new System.Drawing.Point(720, 494);
+            this.lblYAxis.Name = "lblYAxis";
+            this.lblYAxis.Size = new System.Drawing.Size(49, 18);
+            this.lblYAxis.TabIndex = 58;
+            this.lblYAxis.Text = "Y-Axis";
+            // 
+            // lblZAxis
+            // 
+            this.lblZAxis.AutoSize = true;
+            this.lblZAxis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZAxis.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblZAxis.Location = new System.Drawing.Point(720, 537);
+            this.lblZAxis.Name = "lblZAxis";
+            this.lblZAxis.Size = new System.Drawing.Size(49, 18);
+            this.lblZAxis.TabIndex = 59;
+            this.lblZAxis.Text = "Z-Axis";
+            // 
             // SkiburForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(895, 656);
+            this.ClientSize = new System.Drawing.Size(938, 656);
+            this.Controls.Add(this.lblZAxis);
+            this.Controls.Add(this.lblYAxis);
+            this.Controls.Add(this.lblXAxis);
+            this.Controls.Add(this.lblBack);
+            this.Controls.Add(this.lblFront);
+            this.Controls.Add(this.lblDown);
+            this.Controls.Add(this.lblUp);
+            this.Controls.Add(this.lblRight);
+            this.Controls.Add(this.lblLeft);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.lblRotations);
@@ -920,12 +1038,12 @@
         private System.Windows.Forms.Button btnF3Turn;
         private System.Windows.Forms.Button btnF2Turn;
         private System.Windows.Forms.Button btnF1Turn;
-        private System.Windows.Forms.Label lblBack;
-        private System.Windows.Forms.Label lblRight;
-        private System.Windows.Forms.Label lblDown;
-        private System.Windows.Forms.Label lblUp;
-        private System.Windows.Forms.Label lblFront;
-        private System.Windows.Forms.Label lblLeft;
+        private System.Windows.Forms.Label lblB;
+        private System.Windows.Forms.Label lblR;
+        private System.Windows.Forms.Label lblD;
+        private System.Windows.Forms.Label lblU;
+        private System.Windows.Forms.Label lblF;
+        private System.Windows.Forms.Label lblL;
         private System.Windows.Forms.Button btnX1Rotate;
         private System.Windows.Forms.Button btnY1Rotate;
         private System.Windows.Forms.Button btnZ1Rotate;
@@ -956,6 +1074,15 @@
         private System.Windows.Forms.ToolStripButton btnReset;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton btnHelp;
+        private System.Windows.Forms.Label lblLeft;
+        private System.Windows.Forms.Label lblRight;
+        private System.Windows.Forms.Label lblUp;
+        private System.Windows.Forms.Label lblDown;
+        private System.Windows.Forms.Label lblFront;
+        private System.Windows.Forms.Label lblBack;
+        private System.Windows.Forms.Label lblXAxis;
+        private System.Windows.Forms.Label lblYAxis;
+        private System.Windows.Forms.Label lblZAxis;
     }
 }
 
