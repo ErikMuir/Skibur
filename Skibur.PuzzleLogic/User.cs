@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using static Skibur.PuzzleLogic.Enums;
 
 namespace Skibur.PuzzleLogic
 {
@@ -17,11 +18,11 @@ namespace Skibur.PuzzleLogic
 
         public void Redo(int levels = 1)
         {
-            for (int i = 0; i < levels; i++)
+            for (var i = 0; i < levels; i++)
             {
                 if (Current < Commands.Count)
                 {
-                    Command command = Commands[Current++] as Command;
+                    var command = Commands[Current++] as Command;
                     command.Execute();
                 }
             }
@@ -29,11 +30,11 @@ namespace Skibur.PuzzleLogic
 
         public void Undo(int levels = 1)
         {
-            for (int i = 0; i < levels; i++)
+            for (var i = 0; i < levels; i++)
             {
                 if (Current > 0)
                 {
-                    Command command = Commands[--Current] as Command;
+                    var command = Commands[--Current] as Command;
                     command.UnExecute();
                 }
             }
@@ -42,7 +43,7 @@ namespace Skibur.PuzzleLogic
         public void Turn(Slice slice, TurnType turnType)
         {
             // create and execute a new command
-            Command command = new TurnCommand(Cube, slice, turnType);
+            var command = new TurnCommand(Cube, slice, turnType);
             command.Execute();
 
             // remove the ability to redo now that we've triggered a new command
@@ -56,7 +57,7 @@ namespace Skibur.PuzzleLogic
         public void Rotate(Axis axis, TurnType turnType)
         {
             // create and execute a new command
-            Command command = new RotateCommand(Cube, axis, turnType);
+            var command = new RotateCommand(Cube, axis, turnType);
             command.Execute();
 
             // remove the ability to redo now that we've triggered a new command

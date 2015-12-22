@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Command.cs" />
     <Compile Include="RotateCommand.cs" />
-    <Compile Include="StaticCube.cs" />
     <Compile Include="Cube.cs" />
     <Compile Include="Cubie.cs" />
     <Compile Include="Enums.cs" />
