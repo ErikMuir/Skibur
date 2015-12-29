@@ -5,13 +5,20 @@ namespace Skibur.PuzzleLogic
 {
     public class User
     {
-        public Cube Cube { get; set; }
-        public List<Command> Commands { get; set; }
-        public int Current { get; set; }
+        public Cube Cube { get; private set; }
+        public List<Command> Commands { get; private set; }
+        public int Current { get; private set; }
 
         public User()
         {
             Cube = new Cube();
+            Commands = new List<Command>();
+            Current = 0;
+        }
+
+        public User(Cube cube)
+        {
+            Cube = cube;
             Commands = new List<Command>();
             Current = 0;
         }

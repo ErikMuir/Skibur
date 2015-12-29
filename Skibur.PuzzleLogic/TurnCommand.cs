@@ -15,9 +15,9 @@ namespace Skibur.PuzzleLogic
 
         public TurnCommand(Cube cube, Slice slice, TurnType turnType)
         {
-            this.Cube = cube;
-            this.Slice = slice;
-            this.TurnType = turnType;
+            Cube = cube;
+            Slice = slice;
+            TurnType = turnType;
         }
 
         // Execute new command
@@ -32,7 +32,7 @@ namespace Skibur.PuzzleLogic
             Cube.Turn(Slice, Undo(TurnType));
         }
 
-        // Returns opposite operator for given operator
+        // Returns opposite TurnType for given TurnType
         private TurnType Undo(TurnType turnType)
         {
             switch (turnType.TurnCount)
@@ -41,7 +41,7 @@ namespace Skibur.PuzzleLogic
                 case 1: return CounterClockwise;
                 case 2: return Double;
                 case 3: return Clockwise;
-                default: throw new Exception("turnType");
+                default: throw new Exception("TurnType");
             }
         }
     }

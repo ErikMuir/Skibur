@@ -37,7 +37,7 @@ namespace Skibur.App
 
         private void InitializeCube(Cube cube)
         {
-            _user.Cube = new Cube(cube);
+            _user = new User(cube);
             RefreshDisplay();
         }
 
