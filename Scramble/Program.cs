@@ -1,19 +1,27 @@
 ﻿using System;
 using System.Timers;
+using CommandLine;
 
 namespace Scramble
 {
     class Program
     {
-        private static int _turnCount = 20;
         private static double _ms;
         private static Timer _timer = new Timer();
+        private static Random _random = new Random();
+        private static Options _options = new Options();
+        private static Parser _parser = new Parser();
 
         static void Main(string[] args)
         {
-            if (args.Length > 0)
-                if (!int.TryParse(args[0], out _turnCount))
-                    _turnCount = 20;
+            if (_parser.ParseArguments(args, _options))
+            {
+                if (_options.ScrambleOnly)
+                {
+                    Console.Write(Scramble());
+                    Environment.Exit(0);
+                }
+            }                    
 
             _timer.Elapsed += ShowTimer;
             _timer.Interval = 1000;
@@ -59,21 +67,20 @@ namespace Scramble
 
         private static string Scramble()
         {
-            var rnd = new Random();
             var previousFace = -1;
             var faces = new[] {'U', 'D', 'L', 'R', 'F', 'B'};
-            var directions = new[] { Char.MinValue, '\'', '2' };
+            var directions = new[] { char.MinValue, '\'', '2' };
             var scramble = "";
 
-            for (var i = 0; i < _turnCount; i++)
+            for (var i = 0; i < _options.TurnCount; i++)
             {
                 int face;
                 do
                 {
-                    face = rnd.Next(faces.Length);
+                    face = _random.Next(faces.Length);
                 } while (face == previousFace);
 
-                var direction = rnd.Next(directions.Length);
+                var direction = _random.Next(directions.Length);
                 scramble += string.Format("{0}{1} ", faces[face], directions[direction]);
                 previousFace = face;
             }
