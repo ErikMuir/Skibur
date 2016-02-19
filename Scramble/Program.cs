@@ -6,11 +6,11 @@ namespace Scramble
 {
     class Program
     {
-        private static double _ms;
-        private static Timer _timer = new Timer();
-        private static Random _random = new Random();
-        private static Options _options = new Options();
-        private static Parser _parser = new Parser();
+        private static TimeSpan _timeSpan;
+        private static readonly Timer _timer = new Timer();
+        private static readonly Random _random = new Random();
+        private static readonly Options _options = new Options();
+        private static readonly Parser _parser = new Parser();
 
         static void Main(string[] args)
         {
@@ -40,15 +40,16 @@ namespace Scramble
                 switch (input.Key)
                 {
                     case ConsoleKey.Enter:
-                        if (!_timer.Enabled) Console.Write(Scramble());
+                        if (!_timer.Enabled) 
+                            Console.Write(Scramble());
                         break;
                     case ConsoleKey.Spacebar:
-                        _ms = 0;
+                        _timeSpan = TimeSpan.Zero;
                         _timer.Enabled = !_timer.Enabled;
                         if (!_timer.Enabled)
                             Console.Write("\n\n   ");
                         else
-                            Console.Write("\r   {0}", TimeSpan.FromMilliseconds(_ms).ToString(@"mm\:ss"));
+                            Console.Write("\r   {0}", _timeSpan.ToString(@"mm\:ss"));
                         break;
                     case ConsoleKey.Escape:
                         isRunning = false;
@@ -61,8 +62,8 @@ namespace Scramble
 
         private static void ShowTimer(object source, ElapsedEventArgs e)
         {
-            _ms += _timer.Interval;
-            Console.Write("\r   {0}", TimeSpan.FromMilliseconds(_ms).ToString(@"mm\:ss"));
+            _timeSpan += TimeSpan.FromSeconds(1);
+            Console.Write("\r   {0}", _timeSpan.ToString(@"mm\:ss"));
         }
 
         private static string Scramble()
