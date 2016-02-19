@@ -7,7 +7,7 @@ namespace Scramble
     {
         [Option(
             't', 
-            "turn-count", 
+            "turns", 
             Required = false, 
             DefaultValue = 20,
             HelpText = "The number of turns for each scramble.")]
@@ -15,7 +15,7 @@ namespace Scramble
 
         [Option(
             's', 
-            "scramble-only", 
+            "scramble", 
             Required = false, 
             DefaultValue = false,
             HelpText = "Returns a random scramble and then exits.")]
