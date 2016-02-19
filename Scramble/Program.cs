@@ -19,6 +19,8 @@ namespace Scramble
             _timer.Interval = 1000;
             _timer.Enabled = false;
 
+            Console.CursorVisible = false;
+
             Console.Write(Header());
 
             var isRunning = true;
