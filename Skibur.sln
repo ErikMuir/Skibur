@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skibur.PuzzleLogic", "Skibur.PuzzleLogic\Skibur.PuzzleLogic.csproj", "{9141F55E-AF65-4B32-8976-4CFF7E13C1EE}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skibur.App", "Skibur.App\Sk
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skibur.Web", "Skibur.Web\Skibur.Web.csproj", "{F467F182-6278-4228-A121-62B8DA2079CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scramble", "Scramble\Scramble.csproj", "{A6E4A7B9-4129-4609-8298-5AA56CA2882D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skibur.Scramble", "Skibur.Scramble\Skibur.Scramble.csproj", "{A6E4A7B9-4129-4609-8298-5AA56CA2882D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

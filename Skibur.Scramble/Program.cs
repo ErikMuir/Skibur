@@ -2,7 +2,7 @@
 using System.Timers;
 using CommandLine;
 
-namespace Scramble
+namespace Skibur.Scramble
 {
     class Program
     {
