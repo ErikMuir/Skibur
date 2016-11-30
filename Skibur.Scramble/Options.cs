@@ -3,7 +3,7 @@ using CommandLine.Text;
 
 namespace Skibur.Scramble
 {
-    class Options
+    internal class Options
     {
         [Option(
             't', 
@@ -28,7 +28,7 @@ namespace Skibur.Scramble
         public string GetUsage()
         {
             return HelpText.AutoBuild(this,
-              (HelpText current) => HelpText.DefaultParsingErrorsHandler(this, current));
+              current => HelpText.DefaultParsingErrorsHandler(this, current));
         }
     }
 }
