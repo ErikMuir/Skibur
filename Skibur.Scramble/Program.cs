@@ -12,7 +12,7 @@ namespace Skibur.Scramble
         private static readonly Options Options = new Options();
         private static readonly Parser Parser = new Parser();
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             if (Parser.ParseArguments(args, Options))
             {
@@ -46,7 +46,7 @@ namespace Skibur.Scramble
                     case ConsoleKey.Spacebar:
                         _timeSpan = TimeSpan.Zero;
                         Timer.Enabled = !Timer.Enabled;
-                        Console.Write(!Timer.Enabled ? "\n\n   " : $"\r   {_timeSpan.ToString(@"mm\:ss")}");
+                        Console.Write(!Timer.Enabled ? "\n\n  " : $"\r  {_timeSpan.ToString(@"mm\:ss")}");
                         break;
                     case ConsoleKey.Escape:
                         isRunning = false;
@@ -60,7 +60,7 @@ namespace Skibur.Scramble
         private static void ShowTimer(object source, ElapsedEventArgs e)
         {
             _timeSpan += TimeSpan.FromSeconds(1);
-            Console.Write($"\r   {_timeSpan.ToString(@"mm\:ss")}");
+            Console.Write($"\r  {_timeSpan.ToString(@"mm\:ss")}");
         }
 
         private static string Scramble()
@@ -83,15 +83,15 @@ namespace Skibur.Scramble
                 previousFace = face;
             }
 
-            scramble += "\n\n   ";
+            scramble += "\n\n  ";
 
             return scramble;
         }
 
         private static string Header()
         {
-            int i;
             var header = "";
+            int i;
 
             const char horizontal = '_';
             const char vertical = '|';
@@ -101,14 +101,12 @@ namespace Skibur.Scramble
             // Line 1
             header += space;
             header += space;
-            header += space;
             for (i = 0; i < 74; i++)
                 header += horizontal;
             header += space;
             header += newLine;
 
             // Line 2
-            header += space;
             header += space;
             header += vertical;
             for (i = 0; i < 30; i++)
@@ -121,7 +119,6 @@ namespace Skibur.Scramble
 
             // Line 3
             header += space;
-            header += space;
             header += vertical;
             for (i = 0; i < 74; i++)
                 header += space;
@@ -129,7 +126,6 @@ namespace Skibur.Scramble
             header += newLine;
 
             // Line 4
-            header += space;
             header += space;
             header += vertical;
             for (i = 0; i < 25; i++)
@@ -142,7 +138,6 @@ namespace Skibur.Scramble
 
             // Line 5
             header += space;
-            header += space;
             header += vertical;
             for (i = 0; i < 74; i++)
                 header += space;
@@ -150,7 +145,6 @@ namespace Skibur.Scramble
             header += newLine;
 
             // Line 6
-            header += space;
             header += space;
             header += vertical;
             for (i = 0; i < 25; i++)
@@ -163,7 +157,6 @@ namespace Skibur.Scramble
 
             // Line 7
             header += space;
-            header += space;
             header += vertical;
             for (i = 0; i < 74; i++)
                 header += horizontal;
@@ -173,14 +166,14 @@ namespace Skibur.Scramble
             // Instructions
             header += newLine;
             header += newLine;
-            header += "   <Enter> : scramble";
+            header += "  <Enter> : scramble";
             header += newLine;
-            header += "   <Space> : start/stop timer";
+            header += "  <Space> : start/stop timer";
             header += newLine;
-            header += "   <Esc>   : exit";
+            header += "  <Esc>   : exit";
             header += newLine;
             header += newLine;
-            header += "   ";
+            header += "  ";
 
             return header;
         }
