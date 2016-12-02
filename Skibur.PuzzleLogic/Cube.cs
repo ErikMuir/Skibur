@@ -178,7 +178,7 @@ namespace Skibur.PuzzleLogic
 
                 Turn(turningSlice, turnType);
 
-                scramble += string.Format("{0}{1}  ", turningSlice.Symbol, turnType.Symbol);
+                scramble += $"{turningSlice.Symbol}{turnType.Symbol}  ";
 
                 previousSlice = turningSlice;
             }
@@ -422,7 +422,7 @@ namespace Skibur.PuzzleLogic
 
         #region -- Overloaded Extension Methods --
 
-        new public string ToString()
+        public new string ToString()
         {
             var cubeString = "";
 
@@ -434,13 +434,13 @@ namespace Skibur.PuzzleLogic
                     {
                         cubeString += Cubies
                             .Where(c => c.XSlice.Index == x && c.YSlice.Index == y && c.ZSlice.Index == z)
-                            .Select(c => string.Format("{0}{1}{2}", c.XColor.Symbol, c.YColor.Symbol, c.ZColor.Symbol))
+                            .Select(c => $"{c.XColor.Symbol}{c.YColor.Symbol}{c.ZColor.Symbol}")
                             .FirstOrDefault();
                     }
                 }
             }
 
-            cubeString += string.Format("|{0}|{1}", TurnCount, ElapsedTime);
+            cubeString += $"|{TurnCount}|{ElapsedTime}";
 
             return cubeString;
         }

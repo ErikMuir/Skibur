@@ -50,8 +50,8 @@ namespace Skibur.App
             tblFront.Refresh();
             tblBack.Refresh();
             ButtonsRefresh();
-            lblTurnCount.Text = string.Format("Turn Count: {0}", _user.Cube.TurnCount);
-            lblElapsedTime.Text = string.Format("Elapsed Time: {0}", NiceTime(_user.Cube.ElapsedTime));
+            lblTurnCount.Text = $"Turn Count: {_user.Cube.TurnCount}";
+            lblElapsedTime.Text = $"Elapsed Time: {NiceTime(_user.Cube.ElapsedTime)}";
             btnUndo.Enabled = (_user.Current > 0);
             btnRedo.Enabled = (_user.Current < _user.Commands.Count);
         }
@@ -59,13 +59,7 @@ namespace Skibur.App
         private void CubeIsSolved()
         {
             timer1.Stop();
-            MessageBox.Show(
-                string.Format(
-                    "Congratulations! You solved the puzzle in {0} with {1} turns!",
-                    NiceTime(_user.Cube.ElapsedTime),
-                    _user.Cube.TurnCount
-                )
-            );
+            MessageBox.Show($"Congratulations! You solved the puzzle in {NiceTime(_user.Cube.ElapsedTime)} with {_user.Cube.TurnCount} turns!");
         }
 
         private void LoadCube()
@@ -119,8 +113,8 @@ namespace Skibur.App
             var seconds = (time % 60);
 
             return hours >= 1
-                ? string.Format("{0}:{1:00}:{2:00}", hours, minutes, seconds)
-                : string.Format("{0}:{1:00}", minutes, seconds);
+                ? $"{hours}:{minutes.ToString("00")}:{seconds.ToString("00")}"
+                : $"{minutes.ToString("00")}:{seconds.ToString("00")}";
         }
 
         private void ButtonsRefresh()
@@ -270,7 +264,7 @@ namespace Skibur.App
         private void timer1_Tick(object sender, EventArgs e)
         {
             _user.Cube.ElapsedTime++;
-            lblElapsedTime.Text = string.Format("Elapsed Time: {0}", NiceTime(_user.Cube.ElapsedTime));
+            lblElapsedTime.Text = $"Elapsed Time: {NiceTime(_user.Cube.ElapsedTime)}";
         }
 
         private void tblLeft_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
