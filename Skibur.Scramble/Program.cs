@@ -28,7 +28,7 @@ namespace Skibur.Scramble
             Timer.Enabled = false;
 
             Console.CursorVisible = false;
-
+            Console.Clear();
             Console.Write(Header());
 
             var isRunning = true;
@@ -91,88 +91,19 @@ namespace Skibur.Scramble
         private static string Header()
         {
             var header = "";
-            int i;
 
-            const char horizontal = '_';
-            const char vertical = '|';
-            const char space = ' ';
-            const char newLine = '\n';
-
-            // Line 1
-            header += space;
-            header += space;
-            for (i = 0; i < 74; i++)
-                header += horizontal;
-            header += space;
-            header += newLine;
-
-            // Line 2
-            header += space;
-            header += vertical;
-            for (i = 0; i < 30; i++)
-                header += space;
-            header += "Scramble v0.1";
-            for (i = 0; i < 31; i++)
-                header += space;
-            header += vertical;
-            header += newLine;
-
-            // Line 3
-            header += space;
-            header += vertical;
-            for (i = 0; i < 74; i++)
-                header += space;
-            header += vertical;
-            header += newLine;
-
-            // Line 4
-            header += space;
-            header += vertical;
-            for (i = 0; i < 25; i++)
-                header += space;
-            header += "A Rubik's Cube Scrambler";
-            for (i = 0; i < 25; i++)
-                header += space;
-            header += vertical;
-            header += newLine;
-
-            // Line 5
-            header += space;
-            header += vertical;
-            for (i = 0; i < 74; i++)
-                header += space;
-            header += vertical;
-            header += newLine;
-
-            // Line 6
-            header += space;
-            header += vertical;
-            for (i = 0; i < 25; i++)
-                header += space;
-            header += $"Copyright {DateTime.Today.Year} Erik Muir";
-            for (i = 0; i < 25; i++)
-                header += space;
-            header += vertical;
-            header += newLine;
-
-            // Line 7
-            header += space;
-            header += vertical;
-            for (i = 0; i < 74; i++)
-                header += horizontal;
-            header += vertical;
-            header += newLine;
-
-            // Instructions
-            header += newLine;
-            header += newLine;
-            header += "  <Enter> : scramble";
-            header += newLine;
-            header += "  <Space> : start/stop timer";
-            header += newLine;
-            header += "  <Esc>   : exit";
-            header += newLine;
-            header += newLine;
+            header += " █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\n";
+            header += " █        Scramble v0.1         █\n";
+            header += " █                              █\n";
+            header += " █   A Rubik's Cube Scrambler   █\n";
+            header += " █                              █\n";
+            header += " █   Copyright 2016 Erik Muir   █\n";
+            header += " █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n";
+            header += "\n";
+            header += "   <Enter> : scramble\n";
+            header += "   <Space> : start/stop timer\n";
+            header += "   <Esc>   : exit\n";
+            header += "\n";
             header += "  ";
 
             return header;
