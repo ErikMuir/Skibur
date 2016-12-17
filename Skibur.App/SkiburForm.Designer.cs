@@ -99,6 +99,7 @@
             this.lblXAxis = new System.Windows.Forms.Label();
             this.lblYAxis = new System.Windows.Forms.Label();
             this.lblZAxis = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tblBack.SuspendLayout();
             this.tblRight.SuspendLayout();
             this.tblDown.SuspendLayout();
@@ -327,6 +328,7 @@
             this.btnR1Turn.Size = new System.Drawing.Size(34, 37);
             this.btnR1Turn.TabIndex = 3;
             this.btnR1Turn.Text = "R";
+            this.toolTip1.SetToolTip(this.btnR1Turn, "Turn R Clockwise");
             this.btnR1Turn.UseVisualStyleBackColor = true;
             this.btnR1Turn.Click += new System.EventHandler(this.btnR1Turn_Click);
             // 
@@ -338,6 +340,7 @@
             this.btnR2Turn.Size = new System.Drawing.Size(34, 37);
             this.btnR2Turn.TabIndex = 5;
             this.btnR2Turn.Text = "R2";
+            this.toolTip1.SetToolTip(this.btnR2Turn, "Turn R Twice");
             this.btnR2Turn.UseVisualStyleBackColor = true;
             this.btnR2Turn.Click += new System.EventHandler(this.btnR2Turn_Click);
             // 
@@ -349,6 +352,7 @@
             this.btnR3Turn.Size = new System.Drawing.Size(34, 37);
             this.btnR3Turn.TabIndex = 4;
             this.btnR3Turn.Text = "R\'";
+            this.toolTip1.SetToolTip(this.btnR3Turn, "Turn R Counterclockwise");
             this.btnR3Turn.UseVisualStyleBackColor = true;
             this.btnR3Turn.Click += new System.EventHandler(this.btnR3Turn_Click);
             // 
@@ -360,6 +364,7 @@
             this.btnU3Turn.Size = new System.Drawing.Size(34, 37);
             this.btnU3Turn.TabIndex = 7;
             this.btnU3Turn.Text = "U\'";
+            this.toolTip1.SetToolTip(this.btnU3Turn, "Turn U Counterclockwise");
             this.btnU3Turn.UseVisualStyleBackColor = true;
             this.btnU3Turn.Click += new System.EventHandler(this.btnU3Turn_Click);
             // 
@@ -371,6 +376,7 @@
             this.btnU2Turn.Size = new System.Drawing.Size(34, 37);
             this.btnU2Turn.TabIndex = 8;
             this.btnU2Turn.Text = "U2";
+            this.toolTip1.SetToolTip(this.btnU2Turn, "Turn U Twice");
             this.btnU2Turn.UseVisualStyleBackColor = true;
             this.btnU2Turn.Click += new System.EventHandler(this.btnU2Turn_Click);
             // 
@@ -382,6 +388,7 @@
             this.btnU1Turn.Size = new System.Drawing.Size(34, 37);
             this.btnU1Turn.TabIndex = 6;
             this.btnU1Turn.Text = "U";
+            this.toolTip1.SetToolTip(this.btnU1Turn, "Turn U Clockwise");
             this.btnU1Turn.UseVisualStyleBackColor = true;
             this.btnU1Turn.Click += new System.EventHandler(this.btnU1Turn_Click);
             // 
@@ -393,6 +400,7 @@
             this.btnL3Turn.Size = new System.Drawing.Size(34, 37);
             this.btnL3Turn.TabIndex = 1;
             this.btnL3Turn.Text = "L\'";
+            this.toolTip1.SetToolTip(this.btnL3Turn, "Turn L Counterclockwise");
             this.btnL3Turn.UseVisualStyleBackColor = true;
             this.btnL3Turn.Click += new System.EventHandler(this.btnL3Turn_Click);
             // 
@@ -404,6 +412,7 @@
             this.btnL2Turn.Size = new System.Drawing.Size(34, 37);
             this.btnL2Turn.TabIndex = 2;
             this.btnL2Turn.Text = "L2";
+            this.toolTip1.SetToolTip(this.btnL2Turn, "Turn L Twice");
             this.btnL2Turn.UseVisualStyleBackColor = true;
             this.btnL2Turn.Click += new System.EventHandler(this.btnL2Turn_Click);
             // 
@@ -415,6 +424,7 @@
             this.btnL1Turn.Size = new System.Drawing.Size(34, 37);
             this.btnL1Turn.TabIndex = 0;
             this.btnL1Turn.Text = "L";
+            this.toolTip1.SetToolTip(this.btnL1Turn, "Turn L Clockwise");
             this.btnL1Turn.UseVisualStyleBackColor = true;
             this.btnL1Turn.Click += new System.EventHandler(this.btnL1Turn_Click);
             // 
@@ -426,6 +436,7 @@
             this.btnD3Turn.Size = new System.Drawing.Size(34, 37);
             this.btnD3Turn.TabIndex = 10;
             this.btnD3Turn.Text = "D\'";
+            this.toolTip1.SetToolTip(this.btnD3Turn, "Turn D Counterclockwise");
             this.btnD3Turn.UseVisualStyleBackColor = true;
             this.btnD3Turn.Click += new System.EventHandler(this.btnD3Turn_Click);
             // 
@@ -437,6 +448,7 @@
             this.btnD2Turn.Size = new System.Drawing.Size(34, 37);
             this.btnD2Turn.TabIndex = 11;
             this.btnD2Turn.Text = "D2";
+            this.toolTip1.SetToolTip(this.btnD2Turn, "Turn D Twice");
             this.btnD2Turn.UseVisualStyleBackColor = true;
             this.btnD2Turn.Click += new System.EventHandler(this.btnD2Turn_Click);
             // 
@@ -448,6 +460,7 @@
             this.btnD1Turn.Size = new System.Drawing.Size(34, 37);
             this.btnD1Turn.TabIndex = 9;
             this.btnD1Turn.Text = "D";
+            this.toolTip1.SetToolTip(this.btnD1Turn, "Turn D Clockwise");
             this.btnD1Turn.UseVisualStyleBackColor = true;
             this.btnD1Turn.Click += new System.EventHandler(this.btnD1Turn_Click);
             // 
@@ -459,6 +472,7 @@
             this.btnB3Turn.Size = new System.Drawing.Size(34, 37);
             this.btnB3Turn.TabIndex = 16;
             this.btnB3Turn.Text = "B\'";
+            this.toolTip1.SetToolTip(this.btnB3Turn, "Turn B Counterclockwise");
             this.btnB3Turn.UseVisualStyleBackColor = true;
             this.btnB3Turn.Click += new System.EventHandler(this.btnB3Turn_Click);
             // 
@@ -470,6 +484,7 @@
             this.btnB2Turn.Size = new System.Drawing.Size(34, 37);
             this.btnB2Turn.TabIndex = 17;
             this.btnB2Turn.Text = "B2";
+            this.toolTip1.SetToolTip(this.btnB2Turn, "Turn B Twice");
             this.btnB2Turn.UseVisualStyleBackColor = true;
             this.btnB2Turn.Click += new System.EventHandler(this.btnB2Turn_Click);
             // 
@@ -481,6 +496,7 @@
             this.btnB1Turn.Size = new System.Drawing.Size(34, 37);
             this.btnB1Turn.TabIndex = 15;
             this.btnB1Turn.Text = "B";
+            this.toolTip1.SetToolTip(this.btnB1Turn, "Turn B Clockwise");
             this.btnB1Turn.UseVisualStyleBackColor = true;
             this.btnB1Turn.Click += new System.EventHandler(this.btnB1Turn_Click);
             // 
@@ -492,6 +508,7 @@
             this.btnF3Turn.Size = new System.Drawing.Size(34, 37);
             this.btnF3Turn.TabIndex = 13;
             this.btnF3Turn.Text = "F\'";
+            this.toolTip1.SetToolTip(this.btnF3Turn, "Turn F Counterclockwise");
             this.btnF3Turn.UseVisualStyleBackColor = true;
             this.btnF3Turn.Click += new System.EventHandler(this.btnF3Turn_Click);
             // 
@@ -503,6 +520,7 @@
             this.btnF2Turn.Size = new System.Drawing.Size(34, 37);
             this.btnF2Turn.TabIndex = 14;
             this.btnF2Turn.Text = "F2";
+            this.toolTip1.SetToolTip(this.btnF2Turn, "Turn F Twice");
             this.btnF2Turn.UseVisualStyleBackColor = true;
             this.btnF2Turn.Click += new System.EventHandler(this.btnF2Turn_Click);
             // 
@@ -514,6 +532,7 @@
             this.btnF1Turn.Size = new System.Drawing.Size(34, 37);
             this.btnF1Turn.TabIndex = 12;
             this.btnF1Turn.Text = "F";
+            this.toolTip1.SetToolTip(this.btnF1Turn, "Turn F Clockwise");
             this.btnF1Turn.UseVisualStyleBackColor = true;
             this.btnF1Turn.Click += new System.EventHandler(this.btnF1Turn_Click);
             // 
@@ -525,6 +544,7 @@
             this.btnX1Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnX1Rotate.TabIndex = 18;
             this.btnX1Rotate.Text = "X";
+            this.toolTip1.SetToolTip(this.btnX1Rotate, "Rotate Clockwise on X-Axis");
             this.btnX1Rotate.UseVisualStyleBackColor = true;
             this.btnX1Rotate.Click += new System.EventHandler(this.btnX1Rotate_Click);
             // 
@@ -536,6 +556,7 @@
             this.btnY1Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnY1Rotate.TabIndex = 21;
             this.btnY1Rotate.Text = "Y";
+            this.toolTip1.SetToolTip(this.btnY1Rotate, "Rotate Clockwise on Y-Axis");
             this.btnY1Rotate.UseVisualStyleBackColor = true;
             this.btnY1Rotate.Click += new System.EventHandler(this.btnY1Rotate_Click);
             // 
@@ -547,6 +568,7 @@
             this.btnZ1Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnZ1Rotate.TabIndex = 24;
             this.btnZ1Rotate.Text = "Z";
+            this.toolTip1.SetToolTip(this.btnZ1Rotate, "Rotate Clockwise on Z-Axis");
             this.btnZ1Rotate.UseVisualStyleBackColor = true;
             this.btnZ1Rotate.Click += new System.EventHandler(this.btnZ1Rotate_Click);
             // 
@@ -558,6 +580,7 @@
             this.btnZ3Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnZ3Rotate.TabIndex = 25;
             this.btnZ3Rotate.Text = "Z\'";
+            this.toolTip1.SetToolTip(this.btnZ3Rotate, "Rotate Counterclockwise on Z-Axis");
             this.btnZ3Rotate.UseVisualStyleBackColor = true;
             this.btnZ3Rotate.Click += new System.EventHandler(this.btnZ3Rotate_Click);
             // 
@@ -569,6 +592,7 @@
             this.btnY3Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnY3Rotate.TabIndex = 22;
             this.btnY3Rotate.Text = "Y\'";
+            this.toolTip1.SetToolTip(this.btnY3Rotate, "Rotate Counterclockwise on Y-Axis");
             this.btnY3Rotate.UseVisualStyleBackColor = true;
             this.btnY3Rotate.Click += new System.EventHandler(this.btnY3Rotate_Click);
             // 
@@ -580,6 +604,7 @@
             this.btnX3Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnX3Rotate.TabIndex = 19;
             this.btnX3Rotate.Text = "X\'";
+            this.toolTip1.SetToolTip(this.btnX3Rotate, "Rotate Counterclockwise on X-Axis");
             this.btnX3Rotate.UseVisualStyleBackColor = true;
             this.btnX3Rotate.Click += new System.EventHandler(this.btnX3Rotate_Click);
             // 
@@ -591,6 +616,7 @@
             this.btnZ2Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnZ2Rotate.TabIndex = 26;
             this.btnZ2Rotate.Text = "Z2";
+            this.toolTip1.SetToolTip(this.btnZ2Rotate, "Rotate Twice on Z-Axis");
             this.btnZ2Rotate.UseVisualStyleBackColor = true;
             this.btnZ2Rotate.Click += new System.EventHandler(this.btnZ2Rotate_Click);
             // 
@@ -602,6 +628,7 @@
             this.btnY2Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnY2Rotate.TabIndex = 23;
             this.btnY2Rotate.Text = "Y2";
+            this.toolTip1.SetToolTip(this.btnY2Rotate, "Rotate Twice on Y-Axis");
             this.btnY2Rotate.UseVisualStyleBackColor = true;
             this.btnY2Rotate.Click += new System.EventHandler(this.btnY2Rotate_Click);
             // 
@@ -613,6 +640,7 @@
             this.btnX2Rotate.Size = new System.Drawing.Size(34, 37);
             this.btnX2Rotate.TabIndex = 20;
             this.btnX2Rotate.Text = "X2";
+            this.toolTip1.SetToolTip(this.btnX2Rotate, "Rotate Twice on X-Axis");
             this.btnX2Rotate.UseVisualStyleBackColor = true;
             this.btnX2Rotate.Click += new System.EventHandler(this.btnX2Rotate_Click);
             // 
@@ -623,7 +651,7 @@
             this.lblTurns.Location = new System.Drawing.Point(780, 80);
             this.lblTurns.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTurns.Name = "lblTurns";
-            this.lblTurns.Size = new System.Drawing.Size(72, 26);
+            this.lblTurns.Size = new System.Drawing.Size(56, 22);
             this.lblTurns.TabIndex = 46;
             this.lblTurns.Text = "TURNS";
             // 
@@ -634,7 +662,7 @@
             this.lblRotations.Location = new System.Drawing.Point(780, 415);
             this.lblRotations.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRotations.Name = "lblRotations";
-            this.lblRotations.Size = new System.Drawing.Size(111, 26);
+            this.lblRotations.Size = new System.Drawing.Size(86, 22);
             this.lblRotations.TabIndex = 47;
             this.lblRotations.Text = "ROTATIONS";
             // 
@@ -674,7 +702,7 @@
             this.lblElapsedTime.ForeColor = System.Drawing.Color.White;
             this.lblElapsedTime.Margin = new System.Windows.Forms.Padding(10, 3, 25, 2);
             this.lblElapsedTime.Name = "lblElapsedTime";
-            this.lblElapsedTime.Size = new System.Drawing.Size(139, 45);
+            this.lblElapsedTime.Size = new System.Drawing.Size(110, 45);
             this.lblElapsedTime.Text = "Elapsed Time:";
             this.lblElapsedTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -682,7 +710,7 @@
             // 
             this.lblTurnCount.ForeColor = System.Drawing.Color.White;
             this.lblTurnCount.Name = "lblTurnCount";
-            this.lblTurnCount.Size = new System.Drawing.Size(117, 45);
+            this.lblTurnCount.Size = new System.Drawing.Size(91, 45);
             this.lblTurnCount.Text = "Turn Count:";
             // 
             // toolStrip1
@@ -840,7 +868,7 @@
             this.lblLeft.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblLeft.Location = new System.Drawing.Point(737, 115);
             this.lblLeft.Name = "lblLeft";
-            this.lblLeft.Size = new System.Drawing.Size(32, 18);
+            this.lblLeft.Size = new System.Drawing.Size(27, 15);
             this.lblLeft.TabIndex = 51;
             this.lblLeft.Text = "Left";
             // 
@@ -851,7 +879,7 @@
             this.lblRight.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblRight.Location = new System.Drawing.Point(727, 159);
             this.lblRight.Name = "lblRight";
-            this.lblRight.Size = new System.Drawing.Size(42, 18);
+            this.lblRight.Size = new System.Drawing.Size(36, 15);
             this.lblRight.TabIndex = 52;
             this.lblRight.Text = "Right";
             // 
@@ -862,7 +890,7 @@
             this.lblUp.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblUp.Location = new System.Drawing.Point(742, 202);
             this.lblUp.Name = "lblUp";
-            this.lblUp.Size = new System.Drawing.Size(27, 18);
+            this.lblUp.Size = new System.Drawing.Size(23, 15);
             this.lblUp.TabIndex = 53;
             this.lblUp.Text = "Up";
             // 
@@ -873,7 +901,7 @@
             this.lblDown.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblDown.Location = new System.Drawing.Point(722, 246);
             this.lblDown.Name = "lblDown";
-            this.lblDown.Size = new System.Drawing.Size(47, 18);
+            this.lblDown.Size = new System.Drawing.Size(39, 15);
             this.lblDown.TabIndex = 54;
             this.lblDown.Text = "Down";
             // 
@@ -884,7 +912,7 @@
             this.lblFront.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblFront.Location = new System.Drawing.Point(726, 291);
             this.lblFront.Name = "lblFront";
-            this.lblFront.Size = new System.Drawing.Size(43, 18);
+            this.lblFront.Size = new System.Drawing.Size(35, 15);
             this.lblFront.TabIndex = 55;
             this.lblFront.Text = "Front";
             // 
@@ -895,7 +923,7 @@
             this.lblBack.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblBack.Location = new System.Drawing.Point(727, 335);
             this.lblBack.Name = "lblBack";
-            this.lblBack.Size = new System.Drawing.Size(42, 18);
+            this.lblBack.Size = new System.Drawing.Size(34, 15);
             this.lblBack.TabIndex = 56;
             this.lblBack.Text = "Back";
             // 
@@ -906,7 +934,7 @@
             this.lblXAxis.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblXAxis.Location = new System.Drawing.Point(719, 450);
             this.lblXAxis.Name = "lblXAxis";
-            this.lblXAxis.Size = new System.Drawing.Size(50, 18);
+            this.lblXAxis.Size = new System.Drawing.Size(41, 15);
             this.lblXAxis.TabIndex = 57;
             this.lblXAxis.Text = "X-Axis";
             // 
@@ -917,7 +945,7 @@
             this.lblYAxis.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblYAxis.Location = new System.Drawing.Point(720, 494);
             this.lblYAxis.Name = "lblYAxis";
-            this.lblYAxis.Size = new System.Drawing.Size(49, 18);
+            this.lblYAxis.Size = new System.Drawing.Size(40, 15);
             this.lblYAxis.TabIndex = 58;
             this.lblYAxis.Text = "Y-Axis";
             // 
@@ -928,7 +956,7 @@
             this.lblZAxis.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblZAxis.Location = new System.Drawing.Point(720, 537);
             this.lblZAxis.Name = "lblZAxis";
-            this.lblZAxis.Size = new System.Drawing.Size(49, 18);
+            this.lblZAxis.Size = new System.Drawing.Size(40, 15);
             this.lblZAxis.TabIndex = 59;
             this.lblZAxis.Text = "Z-Axis";
             // 
@@ -1083,6 +1111,7 @@
         private System.Windows.Forms.Label lblXAxis;
         private System.Windows.Forms.Label lblYAxis;
         private System.Windows.Forms.Label lblZAxis;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
