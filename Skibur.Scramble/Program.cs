@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Timers;
 using CommandLine;
 
@@ -29,7 +30,7 @@ namespace Skibur.Scramble
 
             Console.CursorVisible = false;
             Console.Clear();
-            Console.Write(Header());
+            Header().ForEach(Console.WriteLine);
 
             var isRunning = true;
 
@@ -46,7 +47,7 @@ namespace Skibur.Scramble
                     case ConsoleKey.Spacebar:
                         _timeSpan = TimeSpan.Zero;
                         Timer.Enabled = !Timer.Enabled;
-                        Console.Write(!Timer.Enabled ? "\n\n  " : $"\r  {_timeSpan.ToString(@"mm\:ss")}");
+                        Console.Write(!Timer.Enabled ? "\n\n" : $"\r  {_timeSpan.ToString(@"mm\:ss")}");
                         break;
                     case ConsoleKey.Escape:
                         isRunning = false;
@@ -68,7 +69,7 @@ namespace Skibur.Scramble
             var previousFace = -1;
             var faces = new[] {'U', 'D', 'L', 'R', 'F', 'B'};
             var directions = new[] { char.MinValue, '\'', '2' };
-            var scramble = "";
+            var scramble = "  ";
 
             for (var i = 0; i < Options.TurnCount; i++)
             {
@@ -83,30 +84,30 @@ namespace Skibur.Scramble
                 previousFace = face;
             }
 
-            scramble += "\n\n  ";
+            scramble += "\n\n";
 
             return scramble;
         }
 
-        private static string Header()
+        private static List<string> Header()
         {
-            var header = "";
-
-            header += " █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\n";
-            header += " █        Scramble v0.1         █\n";
-            header += " █                              █\n";
-            header += " █   A Rubik's Cube Scrambler   █\n";
-            header += " █                              █\n";
-            header += " █   Copyright 2016 Erik Muir   █\n";
-            header += " █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n";
-            header += "\n";
-            header += "   <Enter> : scramble\n";
-            header += "   <Space> : start/stop timer\n";
-            header += "   <Esc>   : exit\n";
-            header += "\n";
-            header += "  ";
-
-            return header;
+            return new List<string>
+            {
+                string.Empty,
+                " █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█",
+                " █        Scramble v0.1         █",
+                " █                              █",
+                " █   A Rubik's Cube Scrambler   █",
+                " █                              █",
+                " █   Copyright 2016 Erik Muir   █",
+                " █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█",
+                string.Empty,
+                "   <Enter> : scramble",
+                "   <Space> : start/stop timer",
+                "   <Esc>   : exit",
+                string.Empty,
+                "  ",
+            };
         }
     }
 }
