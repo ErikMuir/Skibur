@@ -1,5 +1,3 @@
-﻿using static Skibur.PuzzleLogic.Enums;
-
 namespace Skibur.PuzzleLogic
 {
     public class Cubie

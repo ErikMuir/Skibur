@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Timers;
 using CommandLine;
@@ -10,19 +10,21 @@ namespace Skibur.Scramble
         private static TimeSpan _timeSpan;
         private static readonly Timer Timer = new Timer();
         private static readonly Random Random = new Random();
-        private static readonly Options Options = new Options();
-        private static readonly Parser Parser = new Parser();
 
         private static void Main(string[] args)
         {
-            if (Parser.ParseArguments(args, Options))
+            Parser.Default.ParseArguments<Options>(args)
+                .WithParsed(Run)
+                .WithNotParsed(HandleParseError);
+        }
+
+        private static void Run(Options opts)
+        {
+            if (opts.ScrambleOnly)
             {
-                if (Options.ScrambleOnly)
-                {
-                    Console.Write(Scramble());
-                    Environment.Exit(0);
-                }
-            }                    
+                Console.Write(Scramble(opts.TurnCount));
+                Environment.Exit(0);
+            }
 
             Timer.Elapsed += ShowTimer;
             Timer.Interval = 1000;
@@ -41,8 +43,8 @@ namespace Skibur.Scramble
                 switch (input.Key)
                 {
                     case ConsoleKey.Enter:
-                        if (!Timer.Enabled) 
-                            Console.Write(Scramble());
+                        if (!Timer.Enabled)
+                            Console.Write(Scramble(opts.TurnCount));
                         break;
                     case ConsoleKey.Spacebar:
                         _timeSpan = TimeSpan.Zero;
@@ -58,20 +60,40 @@ namespace Skibur.Scramble
             Environment.Exit(0);
         }
 
+        private static void HandleParseError(IEnumerable<Error> errs)
+        {
+            if (errs.IsVersion())
+            {
+                // TODO
+                Console.WriteLine("Version Request");
+                return;
+            }
+
+            if (errs.IsHelp())
+            {
+                // TODO
+                Console.WriteLine("Help Request");
+                return;
+            }
+
+            // TODO
+            Console.WriteLine("Parser Fail");
+        }
+
         private static void ShowTimer(object source, ElapsedEventArgs e)
         {
             _timeSpan += TimeSpan.FromSeconds(1);
             Console.Write($"\r  {_timeSpan.ToString(@"mm\:ss")}");
         }
 
-        private static string Scramble()
+        private static string Scramble(int turnCount)
         {
             var previousFace = -1;
-            var faces = new[] {'U', 'D', 'L', 'R', 'F', 'B'};
+            var faces = new[] { 'U', 'D', 'L', 'R', 'F', 'B' };
             var directions = new[] { char.MinValue, '\'', '2' };
             var scramble = "  ";
 
-            for (var i = 0; i < Options.TurnCount; i++)
+            for (var i = 0; i < turnCount; i++)
             {
                 int face;
                 do

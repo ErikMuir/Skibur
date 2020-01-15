@@ -1,8 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using static Skibur.PuzzleLogic.Enums;
 
 namespace Skibur.PuzzleLogic
 {
@@ -62,9 +61,9 @@ namespace Skibur.PuzzleLogic
             Cubies = new List<Cubie>();
             TurnCount = 0;
             ElapsedTime = 0;
-            XColors = new[] {Blue, NoColor, Green};
-            YColors = new[] {White, NoColor, Yellow};
-            ZColors = new[] {Orange, NoColor, Red};
+            XColors = new[] { Blue, NoColor, Green };
+            YColors = new[] { White, NoColor, Yellow };
+            ZColors = new[] { Orange, NoColor, Red };
 
             for (var x = 0; x < 3; x++)
             {
@@ -154,7 +153,7 @@ namespace Skibur.PuzzleLogic
             return
                 Cubies.All(
                     c =>
-                        c.XColor == XColors[c.XSlice.Index] && 
+                        c.XColor == XColors[c.XSlice.Index] &&
                         c.YColor == YColors[c.YSlice.Index] &&
                         c.ZColor == ZColors[c.ZSlice.Index]);
         }

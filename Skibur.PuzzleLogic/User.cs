@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using static Skibur.PuzzleLogic.Enums;
+using System.Collections.Generic;
 
 namespace Skibur.PuzzleLogic
 {
@@ -69,7 +68,7 @@ namespace Skibur.PuzzleLogic
 
             // remove the ability to redo now that we've triggered a new command
             Commands.RemoveRange(Current, Commands.Count - Current);
-            
+
             // add the new command to the stack
             Commands.Add(command);
             Current++;

@@ -1,8 +1,8 @@
-﻿/// <summary>
-/// The 'Command' abstract class
-/// </summary>
-public abstract class Command
+namespace Skibur.PuzzleLogic
 {
-    public abstract void Execute();
-    public abstract void UnExecute();
+    public abstract class Command
+    {
+        public abstract void Execute();
+        public abstract void UnExecute();
+    }
 }

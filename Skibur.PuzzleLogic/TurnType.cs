@@ -1,4 +1,4 @@
-﻿namespace Skibur.PuzzleLogic
+namespace Skibur.PuzzleLogic
 {
     public class TurnType
     {
