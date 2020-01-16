@@ -1,10 +1,9 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using Skibur.PuzzleLogic;
-using static Skibur.PuzzleLogic.Enums;
 
 namespace Skibur.App
 {

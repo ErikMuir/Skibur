@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skibur.PuzzleLogic", "Skibu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skibur.Scramble", "Skibur.Scramble\Skibur.Scramble.csproj", "{6D8CD996-F401-4057-8C25-FE176BD066E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skibur.App", "Skibur.App\Skibur.App.csproj", "{B2809496-2ADE-46B3-871F-2407FBE99A5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{6D8CD996-F401-4057-8C25-FE176BD066E4}.Release|x64.Build.0 = Release|Any CPU
 		{6D8CD996-F401-4057-8C25-FE176BD066E4}.Release|x86.ActiveCfg = Release|Any CPU
 		{6D8CD996-F401-4057-8C25-FE176BD066E4}.Release|x86.Build.0 = Release|Any CPU
+		{B2809496-2ADE-46B3-871F-2407FBE99A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2809496-2ADE-46B3-871F-2407FBE99A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2809496-2ADE-46B3-871F-2407FBE99A5C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B2809496-2ADE-46B3-871F-2407FBE99A5C}.Debug|x64.Build.0 = Debug|Any CPU
+		{B2809496-2ADE-46B3-871F-2407FBE99A5C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B2809496-2ADE-46B3-871F-2407FBE99A5C}.Debug|x86.Build.0 = Debug|Any CPU
+		{B2809496-2ADE-46B3-871F-2407FBE99A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2809496-2ADE-46B3-871F-2407FBE99A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2809496-2ADE-46B3-871F-2407FBE99A5C}.Release|x64.ActiveCfg = Release|Any CPU
+		{B2809496-2ADE-46B3-871F-2407FBE99A5C}.Release|x64.Build.0 = Release|Any CPU
+		{B2809496-2ADE-46B3-871F-2407FBE99A5C}.Release|x86.ActiveCfg = Release|Any CPU
+		{B2809496-2ADE-46B3-871F-2407FBE99A5C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
